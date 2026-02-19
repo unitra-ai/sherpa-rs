@@ -3,3 +3,4 @@ sherpa-onnx-v1.12.23-linux-x64-static.tar.bz2	ef3c496beb43b3f07d07249f33c3bfff3d
 sherpa-onnx-v1.12.23-osx-universal2-shared.tar.bz2	1a109e42a76b98db4524ad64ae942eae7ecfc52f336ce9b6f5a4241b618a70a1
 sherpa-onnx-v1.12.23-osx-universal2-static.tar.bz2	2d0355264e1c11279b20ffd83983108c79139b9564ac18867c930f9e03cede47
 sherpa-onnx-v1.12.23-win-x64-shared.tar.bz2	c757677f3e6b9bab535bc8b9f42ec2d3612ab9fa6a213bab22a0011d66d3dba2
+sherpa-onnx-v1.12.23-win-x64-static.tar.bz2	4694951503df490f8427b3ea686ba9afe42ddfd25649cfa4503c9aea3d9a976d
