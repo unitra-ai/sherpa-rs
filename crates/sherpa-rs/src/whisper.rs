@@ -59,6 +59,9 @@ impl WhisperRecognizer {
         let decoding_method_ptr = cstring_from_str("greedy_search");
 
         let whisper_config = sherpa_rs_sys::SherpaOnnxOfflineWhisperModelConfig {
+            // Added in sherpa-onnx v1.13.4
+            enable_segment_timestamps: 0,
+            enable_token_timestamps: 0,
             decoder: decoder_ptr.as_ptr(),
             encoder: encoder_ptr.as_ptr(),
             language: language_ptr.as_ptr(),
@@ -67,6 +70,10 @@ impl WhisperRecognizer {
         };
         let model_config = unsafe {
             sherpa_rs_sys::SherpaOnnxOfflineModelConfig {
+                // Added in sherpa-onnx v1.13.4
+                fire_red_asr_ctc: std::mem::zeroed::<_>(),
+                qwen3_asr: std::mem::zeroed::<_>(),
+                cohere_transcribe: std::mem::zeroed::<_>(),
                 whisper: whisper_config,
                 debug,
                 num_threads,

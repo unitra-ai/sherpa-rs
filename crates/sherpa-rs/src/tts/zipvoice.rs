@@ -41,6 +41,9 @@ impl ZipVoiceTts {
             let tts_config = config.common_config.to_raw();
 
             let model_config = sherpa_rs_sys::SherpaOnnxOfflineTtsModelConfig {
+                // Added in sherpa-onnx v1.13.4
+                pocket: std::mem::zeroed::<_>(),
+                supertonic: std::mem::zeroed::<_>(),
                 vits: mem::zeroed::<_>(),
                 num_threads: config.onnx_config.num_threads,
                 debug: config.onnx_config.debug.into(),

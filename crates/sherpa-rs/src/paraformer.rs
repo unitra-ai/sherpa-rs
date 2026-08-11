@@ -51,6 +51,10 @@ impl ParaformerRecognizer {
         // Offline model config
         let model_config = unsafe {
             sherpa_rs_sys::SherpaOnnxOfflineModelConfig {
+                // Added in sherpa-onnx v1.13.4
+                fire_red_asr_ctc: std::mem::zeroed::<_>(),
+                qwen3_asr: std::mem::zeroed::<_>(),
+                cohere_transcribe: std::mem::zeroed::<_>(),
                 debug,
                 num_threads: config.num_threads.unwrap_or(1),
                 provider: provider_ptr.as_ptr(),
