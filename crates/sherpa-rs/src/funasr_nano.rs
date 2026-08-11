@@ -70,6 +70,10 @@ impl FunAsrNanoRecognizer {
         let user_prompt_ptr = config.user_prompt.as_ref().map(|s| cstring_from_str(s));
 
         let funasr_nano_config = sherpa_rs_sys::SherpaOnnxOfflineFunASRNanoModelConfig {
+            // Added in sherpa-onnx v1.13.4
+            hotwords: std::ptr::null(),
+            itn: 0,
+            language: std::ptr::null(),
             encoder_adaptor: encoder_adaptor_ptr.as_ptr(),
             llm: llm_ptr.as_ptr(),
             embedding: embedding_ptr.as_ptr(),
@@ -84,6 +88,10 @@ impl FunAsrNanoRecognizer {
 
         let model_config = unsafe {
             sherpa_rs_sys::SherpaOnnxOfflineModelConfig {
+                // Added in sherpa-onnx v1.13.4
+                fire_red_asr_ctc: std::mem::zeroed::<_>(),
+                qwen3_asr: std::mem::zeroed::<_>(),
+                cohere_transcribe: std::mem::zeroed::<_>(),
                 debug,
                 num_threads,
                 provider: provider_ptr.as_ptr(),

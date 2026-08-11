@@ -58,9 +58,15 @@ impl MoonshineRecognizer {
 
         let model_config = unsafe {
             sherpa_rs_sys::SherpaOnnxOfflineModelConfig {
+                // Added in sherpa-onnx v1.13.4
+                fire_red_asr_ctc: std::mem::zeroed::<_>(),
+                qwen3_asr: std::mem::zeroed::<_>(),
+                cohere_transcribe: std::mem::zeroed::<_>(),
                 debug,
                 num_threads,
                 moonshine: sherpa_rs_sys::SherpaOnnxOfflineMoonshineModelConfig {
+                    // Added in sherpa-onnx v1.13.4
+                    merged_decoder: std::mem::zeroed::<_>(),
                     preprocessor: preprocessor_ptr.as_ptr(),
                     encoder: encoder_ptr.as_ptr(),
                     uncached_decoder: uncached_decoder_ptr.as_ptr(),

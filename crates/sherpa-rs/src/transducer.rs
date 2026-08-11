@@ -68,6 +68,10 @@ impl TransducerRecognizer {
             let decoding_method = cstring_from_str(&config.decoding_method);
 
             let offline_model_config = sherpa_rs_sys::SherpaOnnxOfflineModelConfig {
+                // Added in sherpa-onnx v1.13.4
+                fire_red_asr_ctc: std::mem::zeroed::<_>(),
+                qwen3_asr: std::mem::zeroed::<_>(),
+                cohere_transcribe: std::mem::zeroed::<_>(),
                 transducer: sherpa_rs_sys::SherpaOnnxOfflineTransducerModelConfig {
                     encoder: encoder.as_ptr(),
                     decoder: decoder.as_ptr(),
