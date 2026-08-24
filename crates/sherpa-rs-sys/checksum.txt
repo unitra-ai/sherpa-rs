@@ -1,7 +1,7 @@
-sherpa-onnx-v1.13.4-unitra.1-linux-x64-shared.tar.bz2	e4a35337b3fa457926fbc9d9f0e2ab0dc37a7ecc059853e32c8d09a22e832e2c
-sherpa-onnx-v1.13.4-unitra.1-linux-x64-static.tar.bz2	b0597e131c087b08bc37b49727e6e6a8b6bda7673d07047190b7c5f2a92b9a02
-sherpa-onnx-v1.13.4-unitra.1-osx-universal2-shared.tar.bz2	52e4b083c8052039e664d134ecaa2de32d6f1aa3df962839fc1fbab6019318ef
-sherpa-onnx-v1.13.4-unitra.1-osx-universal2-static.tar.bz2	d36c6c6f677d91af677d8a462b7950aa0491a87080a4a334277db61ad22d813c
-sherpa-onnx-v1.13.4-unitra.1-win-x64-directml-shared.tar.bz2	e6927fb6e804a3bf1a4d8e27dd8e1ad1f7e99f819331003ac0bb0ffeb4e9aec5
-sherpa-onnx-v1.13.4-unitra.1-win-x64-shared.tar.bz2	0a30e4013cb0e00cde690bc19b2363926d92346589e5c8c54f8887b891385c2e
-sherpa-onnx-v1.13.4-unitra.1-win-x64-static.tar.bz2	21050649f2591e7313ab834a37d2a9837615bc5fa563755d866a17df0c609864
+sherpa-onnx-v1.13.4-unitra.2-linux-x64-shared.tar.bz2	4834a25a551ba4b65fa5b4665e4f672d0e46799cc4093426071fb24a4a33c9c7
+sherpa-onnx-v1.13.4-unitra.2-linux-x64-static.tar.bz2	2ad5da57d4182be9a6ea5c63282079c480a81fa72fb0ca0462d8002c25d4ab11
+sherpa-onnx-v1.13.4-unitra.2-osx-universal2-shared.tar.bz2	ac7e6b73ae39c65342e427245ee174f5235ae0b742557fb97e0c7abbbb9967d9
+sherpa-onnx-v1.13.4-unitra.2-osx-universal2-static.tar.bz2	3360f393f661248d705ebaf496804969a4239edc77680661457738486f7bfed0
+sherpa-onnx-v1.13.4-unitra.2-win-x64-directml-shared.tar.bz2	11a1cc53b1dca086871e2c4764bb158371509d5c2ae456e83490dea2c0377da0
+sherpa-onnx-v1.13.4-unitra.2-win-x64-shared.tar.bz2	bdf92cba320805671c4d0c59f6105904368fed3a541ed695875b14bb7577c390
+sherpa-onnx-v1.13.4-unitra.2-win-x64-static.tar.bz2	61c09229524ec500c08aed78faebc76504a030cdb58da09aca0a2fc645840547
